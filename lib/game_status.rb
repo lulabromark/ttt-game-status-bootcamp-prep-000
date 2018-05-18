@@ -53,7 +53,9 @@ def over?(board)
 end
 
 def winner(board)
-  if win = won?(board)
-    return board[win[0]]
+  if won?(board) && board.detect{|i| i == "O"}
+    return "O"
+  elsif won?(board) && board.detect{|i| i == "X"}
+    return "X"
   end
 end
