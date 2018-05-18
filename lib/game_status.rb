@@ -54,6 +54,8 @@ end
 
 def winner(board)
   if won?(board)
-    board[won?(board)[0]]
+    winning = won?(board)
+    board[winning[0]]
+    # board[won?(board)[0]]
   end
 end
