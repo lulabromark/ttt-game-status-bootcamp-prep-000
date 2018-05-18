@@ -53,7 +53,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return win_combination[0]
+  if win = won?(board)
+    return win[0]
   end
 end
